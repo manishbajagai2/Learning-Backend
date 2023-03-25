@@ -1,0 +1,17 @@
+{
+  "name": "tasks-express",
+  "version": "1.0.0",
+  "description": "Another one from scaler lecture",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Manish Bajagai",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "express": "^4.18.2",
+    "nodemon": "^2.0.22"
+  }
+}

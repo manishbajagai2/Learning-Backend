@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Learning Form Data Submission</title>
+        <style>
+            body {
+                display: flex;
+                flex-direction: column;
+                min-height: 70vh;
+                justify-content: center;
+                align-items: center;
+            }
+            input{
+                font-size: 16px;
+                padding: 10px;
+                min-width: 150px;
+            }
+            input[type="text"],input[type="number"] {
+                text-align: left;
+                min-width: 300px;
+            }
+        </style>
+    </head>
+    <body>
+        <form action="/tasks" method="post">
+            <label for="add-task"></label>
+            <input
+                type="text"
+                name="addTask"
+                placeholder="Enter a task"
+                id="add-task"
+            />
+            &nbsp;
+            <input type="submit" value="Add task" />
+        </form>
+        <br />
+        <form action="/" method="post">
+            <label for="index"></label>
+            <input
+                type="number"
+                name="index"
+                placeholder="Enter an index to access the task"
+                id="index"
+            />
+            &nbsp;
+            <input type="submit" value="Submit" />
+        </form>
+        <br />
+        <a href="/tasks"
+            ><input type="submit" value="Go to see all the tasks"
+        /></a>
+    </body>
+</html>
